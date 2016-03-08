@@ -9,6 +9,8 @@ object Hello {
     println(parse(""" { "numbers": [ 1, 2, 3, 4 ] }"""))
     // JObject(List((name,JString(Toy)), (price,JDecimal(35.35))))
     println(parse("""{"name":"Toy","price":35.35}""", useBigDecimalForDouble = true))
+    // JObject(List((name,JString(Toy)), (price,JDouble(35.35))))
+    println(parse("""{"name":"Toy","price":35.35}""", useBigDecimalForDouble = false))
     println("Hello, world!")
   }
 }
