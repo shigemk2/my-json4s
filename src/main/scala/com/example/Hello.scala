@@ -15,7 +15,8 @@ object Hello {
     println(parse("""{"name":"Toy","price":35.35}""", useBigDecimalForDouble = false))
     // DSL Rules
     // Primitive types map to JSON primitives.
-    val json1 = List(1, 2, 3)
+    // val json1 = List(1, 2, 3)
+    val json1 = Seq(1,2,3,4,5)
     println(compact(render(json1)))
     println("Hello, world!")
   }
