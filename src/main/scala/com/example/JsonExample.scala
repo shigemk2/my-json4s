@@ -28,6 +28,8 @@ object JsonExample {
 
 
     println(compact(render(json)))
+    // jqを使った感じで整形
+    println(pretty(render(json)))
     println("Hello, world!")
   }
 }
