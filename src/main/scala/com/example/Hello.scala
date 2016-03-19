@@ -18,6 +18,7 @@ object Hello {
     // val json1 = List(1, 2, 3)
     val json1 = Seq(1,2,3,4,5)
     println(compact(render(json1)))
+
     println("Hello, world!")
   }
 }
